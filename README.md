@@ -152,6 +152,3 @@ Netflix_ML_Project/
 
 ---
 
-## Author
-
-Second-year B.Tech student project focused on learning practical machine learning, data analysis, and model evaluation using real-world datasets.
