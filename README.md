@@ -220,7 +220,7 @@ python train_model.py
 
 ### Top Netflix Genres
 
-![Top Genres](screenshots/top_genres.png)
+![Top Genres](screenshots/genre_plot.png)
 
 ### Random Forest Confusion Matrix
 
