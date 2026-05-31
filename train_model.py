@@ -1,4 +1,6 @@
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
@@ -64,6 +66,16 @@ rf_pred = rf.predict(X_test)
 print("\nRandom Forest Results: ")
 print("Accuracy = ", accuracy_score(y_test, rf_pred))
 print("Confusion Matrix = \n", confusion_matrix(y_test, rf_pred))
+
+rf_cm = confusion_matrix(y_test, rf_pred)
+plt.figure(figsize=(6,4))
+sns.heatmap(rf_cm, annot = True, fmt = "d")
+plt.title("Random Forest Confusion Matrix")
+plt.xlabel("Preiction")
+plt.ylabel("Actual")
+plt.tight_layout()
+plt.savefig("screenshots/rf_confusion_matrix.png")
+plt.show()
 
 #Logistic regression Model
 lr = LogisticRegression(max_iter = 1000)

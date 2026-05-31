@@ -27,7 +27,7 @@ plt.title("Movies vs TV Shows Distribution")
 plt.xlabel("Type")
 plt.ylabel("Count")
 plt.tight_layout()
-plt.savefig("movies_vs_tvshows.png")
+plt.savefig("screenshots/movies_vs_tvshows.png")
 plt.show()
 
 #============================
@@ -40,7 +40,7 @@ plt.title("Rating Distribution")
 plt.tight_layout()
 plt.xlabel("Rating")
 plt.ylabel("Count")
-plt.savefig("rating_distribution.png")
+plt.savefig("screenshots/rating_distribution.png")
 plt.show()
 
 #==================================
@@ -52,7 +52,7 @@ plt.title("Netflix Content Release Distribution")
 plt.xlabel("Release Year")
 plt.ylabel("Count")
 plt.tight_layout()
-plt.savefig("release_year_distribution.png")
+plt.savefig("screenshots/release_year_distribution.png")
 plt.show()
 
 #======================
@@ -65,5 +65,5 @@ plt.title("Top 10 Netflix Genres")
 plt.xlabel("No. of Titles")
 plt.ylabel("Genre")
 plt.tight_layout()
-plt.savefig("genre_plot.png")
+plt.savefig("screenshots/genre_plot.png")
 plt.show()
